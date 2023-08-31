@@ -1,0 +1,18 @@
+para programar un intervalo de tiempo
+https://www.youtube.com/watch?v=BUB42H09kqI
+
+
+<script>
+    (function()
+    {
+        let timer = 30;
+        let Mostrartiempo = document.getElementById('Tiempo');
+        setInterval(()=>
+            {
+                timer--;
+                Mostrartiempo.innerHTML = ${timer};
+                function(){document.location.reload()}    
+            },1000)            
+            
+    })()
+</script>

@@ -1,0 +1,35 @@
+* {margin: 0px; padding: 0px;}
+
+html,body {height: 100%;}
+
+@font-face {
+    font-family:CodigoFont ;
+    src: url(font/MuchoFiesta.ttf);
+}
+
+.textoRaro{
+    font-family:CodigoFont ;
+    font-size: 70px; 
+    text-align: center;    
+}
+
+.textoRaroBig{
+    font-family:CodigoFont ;
+    font-size: 200px; 
+}
+
+.textoMedio{
+    font-family:CodigoFont ;
+    font-size: 100px; 
+}
+
+/* Define the styling for the sections */
+.section1 {
+  height: 10%; /* Divide the screen into 3 equal sections */
+  width: 100%;
+}
+
+.section2 {
+    height: 40%; /* Divide the screen into 3 equal sections */
+    width: 100%;
+  }

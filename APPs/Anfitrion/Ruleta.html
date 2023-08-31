@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ruleta</title>
+    <style>
+      /* Estilos CSS para la ruleta */
+      .ruleta {
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: red;
+        position: relative;
+        overflow: hidden;
+      }
+      .ruleta::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: white;
+        transform: translate(-50%, -50%);
+      }
+      .ruleta div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        transform-origin: 50% 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ruleta">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+    <button onclick="girar()">Girar</button>
+    <script>
+      /* Función para girar la ruleta */
+      function girar() {
+        var ruleta = document.querySelector(".ruleta");
+        var grados = Math.floor(Math.random() * 360) + 720;
+        ruleta.style.transform = "rotate(" + grados + "deg)";
+      }
+    </script>
+  </body>
+</html>
