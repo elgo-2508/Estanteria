@@ -57,12 +57,14 @@
 		{
 			if ($row['NumError'] == 3)
 					{
-					//session_start();
+					session_start();
 					$_SESSION['Codigo']=$Codigo ;
 					$_SESSION['Participante']=$Participante;
 					header('Location: SalaJugador.php');
+					$conn_sis->close();
+					exit;
 					}
-			if ($row['NumError'] != 2)
+			if ($row['NumError'] = 2)
 			{
 					echo ' <script type="text/javascript"> alertify.error("'.$row['Descripcion'].'");</script>';	
 			}                

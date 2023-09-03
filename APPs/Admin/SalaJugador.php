@@ -10,6 +10,7 @@
 </head>
 <body>
     <?php
+    ob_start();
     session_start();
 	  $Codigo = $_SESSION['Codigo'];
     $Participante = $_SESSION['Participante'];

@@ -42,7 +42,7 @@
 	<!-- ===============================================-->
 	<main class="main" id="top">
 	<?php require_once "F_B_Menu.php"; ?>
-	<?php require_once "BD_B_RetornaDatosF1.php"; ?>
+	<?php require_once "BD_B_RetornaDatosF2.php"; ?>
 	<!-- Menu Vertical Y  HORIZONTAL-->
 		<!-- FIN Menu Horizontal colabado y demas-->
 		<!-- Inicio cuerpo-->

@@ -6,7 +6,7 @@ $clave = $_POST['password'];
 
 if (validarEntrada($email) && validarEntrada($clave)) {
 	// Los datos son válidos, continuar con el procesamiento
-	include($_SERVER['DOCUMENT_ROOT'] ."/estanteria/APPs/php/conexion_mysql.php");
+	include("../../APPs/php/conexion_mysql.php");
 	// Consulta para verificar el inicio de sesión
 	$Consulta = "SELECT id, nombre FROM usuarios WHERE email = '$email' AND contraseña = '$clave'";
 	$ejecutar = $conn_sis->query($Consulta);
@@ -21,7 +21,8 @@ if (validarEntrada($email) && validarEntrada($clave)) {
 			header('Location:../Estanteria/Estanteria.php'); // Redirige al panel de control o página de inicio
 	} else {
 			// Inicio de sesión fallido
-			header('Location: OlvidoClave.php'); // Redirige al formulario de inicio de sesión con un mensaje de error
+			header('Location: OlvidoClave.php'); 
+			// Redirige al formulario de inicio de sesión con un mensaje de error
 	}
 	
 	// Cerrar la conexión a la base de datos

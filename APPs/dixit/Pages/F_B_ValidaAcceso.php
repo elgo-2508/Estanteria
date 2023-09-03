@@ -56,7 +56,7 @@
 					}
 					elseif ($row['Estado'] == '1')
 					{
-						header('Location: F_U_SalaEsperaF1.php');
+						header('Location: F_U_SalaEsperaF3.php');
 					}
 					break;
 		}

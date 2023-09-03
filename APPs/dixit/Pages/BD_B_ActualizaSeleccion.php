@@ -4,9 +4,6 @@
 	if ($conn_sis->query($Consulta) === TRUE) 
 	{
 		echo "registro actualizado: ";
-		// Redirigir a la nueva página después del procesamiento
-		//header('Location: F_B_ValidaAcceso.php');
-		//exit; // Asegurar que el script se detenga después de la redirección
 	} 
 	else 
 	{
