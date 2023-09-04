@@ -62,7 +62,7 @@ if (!isset($_SESSION['token']) )
         <!-- inicia el contenido-->
         <div class="card-container">
           <?php {
-          include($_SERVER['DOCUMENT_ROOT'] ."/estanteria/APPs/php/conexion_mysql.php");
+          include($_SERVER['DOCUMENT_ROOT'] ."/Estanteria/APPs/php/conexion_mysql.php");
           $Consulta = "call Generar_CargarEstanteria ('Egiraldo');";
           $ejecutar = $conn_sis->query($Consulta);
           $i=1;
