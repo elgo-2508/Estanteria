@@ -55,7 +55,7 @@ if (!isset($_SESSION['token']) )
     <!-- ===============================================-->
     <main class="main" id="top">
       <!-- Menu Vertical Y  HORIZONTAL-->
-      <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/Estanteria/APPs/Admin/MD_B_menu.php"; ?>
+      <?php require_once "../../APPs/Admin/MD_B_menu.php"; ?>
       <!-- FIN Menu Horizontal colabado y demas-->
       <!-- Inicio cuerpo-->
       <div class="content">
