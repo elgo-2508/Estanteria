@@ -14,7 +14,7 @@
 				echo ' <script type="text/javascript"> alertify.success("debes ingresar el numero de jugadores");</script>';
 				return false;
 			} 			
-			include($_SERVER['DOCUMENT_ROOT'] ."/estanteria/APPs/php/conexion_mysql.php");
+			include($_SERVER['DOCUMENT_ROOT'] ."/Estanteria/APPs/php/conexion_mysql.php");
 			$Consulta = "Call RegistrarNuevoJuego ('".$Juego."', '".$NJugadores."', '".$IP."', '".$Duracion."');";
       $ejecutar = $conn_sis->query($Consulta);
 			$i=1;

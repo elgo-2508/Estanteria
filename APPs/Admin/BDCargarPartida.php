@@ -1,7 +1,7 @@
 <?php
 			session_start();
 			$Juego = $_SESSION['floatingSelectGame'];
-			include($_SERVER['DOCUMENT_ROOT'] ."/estanteria/APPs/php/conexion_mysql.php");
+			include($_SERVER['DOCUMENT_ROOT'] ."/Estanteria/APPs/php/conexion_mysql.php");
 			$Consulta = "Call CargarJuegoActivo ('".$Juego."');";
       $ejecutar = $conn_sis->query($Consulta);
 			$i=1;

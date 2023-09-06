@@ -12,7 +12,7 @@ session_start();
         return "rgb($r, $g, $b)";
       }
 
-    include($_SERVER['DOCUMENT_ROOT'] ."/estanteria/APPs/php/conexion_mysql.php");
+    include($_SERVER['DOCUMENT_ROOT'] ."/Estanteria/APPs/php/conexion_mysql.php");
     $Consulta = "Call CargarParticipantes ('".$Codigo."');";
     $ejecutar = $conn_sis->query($Consulta);
     $i=1;

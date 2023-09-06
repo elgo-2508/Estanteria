@@ -13,7 +13,7 @@ $PathSalaEspera=$_SESSION['PathSalaEspera'];
 $Codigo = $_SESSION['Codigo'];
 $IPServ = $_SESSION['IPServ'];
 
-include($_SERVER['DOCUMENT_ROOT'] ."/estanteria/APPs/php/conexion_mysql.php");
+include($_SERVER['DOCUMENT_ROOT'] ."/Estanteria/APPs/php/conexion_mysql.php");
 $Consulta = "Call CargarParticipantes ('".$Codigo."');";
 $ejecutar = $conn_sis->query($Consulta);
 $i=1;
@@ -87,7 +87,7 @@ $conn_sis->close();
 							<div class="card h-100">
 								<div class="card-body">
 									<center>
-										<img src="../../assets\img\icons\LogoSinFondo.png" class="img-fluid" 
+										<img src="../../assets/img/icons/LogoSinFondo.png" class="img-fluid" 
 										style="max-width: 300px">
 										<h1><?php echo ($Juego);?></h1>
 									</center>
@@ -104,10 +104,10 @@ $conn_sis->close();
 									<center>
 									<h3 >Esperando Participantes</h3>
 									<?php      
-										$dir = 'Temp/';
+											$dir = 'Temp/';
 										if (!file_exists($dir))
 												mkdir($dir);
-											$filename =$dir.'Codigo.png';
+											$filename =$dir.'Codigo'.$Codigo.'.png';
 											$tamano = 5;
 											$lever = 'M';
 											$frameSize = 3;
@@ -116,7 +116,7 @@ $conn_sis->close();
 									?>
 									<h6 class="textoRaro"><?php {echo $Codigo;}?></h6>
 									
-										<img class='me-3 bg-purple rounded shadow-sm"'   src='Temp/Codigo.png' alt='' 
+										<img class='me-3 bg-purple rounded shadow-sm"'   src='Temp/Codigo<?php {echo $Codigo;}?>.png' alt='' 
 										height='250'>
 									<button class='w-100 btn btn-lg btn-primary m-3' name='IniciarJuego' type='submit'>
 										Iniciar Juego

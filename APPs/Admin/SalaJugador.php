@@ -14,7 +14,7 @@
     session_start();
 	  $Codigo = $_SESSION['Codigo'];
     $Participante = $_SESSION['Participante'];
-    include($_SERVER['DOCUMENT_ROOT'] ."/estanteria/APPs/php/conexion_mysql.php");
+    include($_SERVER['DOCUMENT_ROOT'] ."/Estanteria/APPs/php/conexion_mysql.php");
     $Consulta = "Call DX_Validar_Estado ('".$Codigo."', '".$Participante."');";
     $ejecutar = $conn_sis->query($Consulta);
     $i=1;
@@ -52,14 +52,14 @@
     if ($estado == 1) {
       $_SESSION['Codigo']=$Codigo ;
       $_SESSION['Participante']= $Participante;
-      header('Location: ..\dixit\Pages\F_B_ValidaAcceso.php');
+      header('Location: ../dixit/Pages/F_B_ValidaAcceso.php');
     }
     ?>
 
     <?php
     if(isset($_POST['CargarTablero']))
     {	
-			include($_SERVER['DOCUMENT_ROOT'] ."/estanteria/APPs/php/conexion_mysql.php");
+			include($_SERVER['DOCUMENT_ROOT'] ."/Estanteria/APPs/php/conexion_mysql.php");
 			$Consulta = "Call ADM_VerificarInicioPartida ('".$Codigo."');";
       $ejecutar = $conn_sis->query($Consulta);
 			$i=1;

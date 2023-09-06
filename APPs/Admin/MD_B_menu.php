@@ -130,7 +130,7 @@
       											<div class="d-flex">
       												<div class="avatar avatar-m status-online me-3"><img
       														class="rounded-circle"
-      														src="../../assets/img/team/40x40/30.webp" alt=""></div>
+      														src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/30.webp" alt=""></div>
       												<div class="flex-1 me-sm-3">
       													<h4 class="fs--1 text-black">Jessie Samson</h4>
       													<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -191,7 +191,7 @@
       											<div class="d-flex">
       												<div class="avatar avatar-m status-online me-3"><img
       														class="rounded-circle avatar-placeholder"
-      														src="../../assets/img/team/40x40/avatar.webp" alt="">
+      														src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/avatar.webp" alt="">
       												</div>
       												<div class="flex-1 me-sm-3">
       													<h4 class="fs--1 text-black">Jessie Samson</h4>
@@ -224,7 +224,7 @@
       											<div class="d-flex">
       												<div class="avatar avatar-m status-online me-3"><img
       														class="rounded-circle"
-      														src="../../assets/img/team/40x40/57.webp" alt=""></div>
+      														src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/57.webp" alt=""></div>
       												<div class="flex-1 me-sm-3">
       													<h4 class="fs--1 text-black">Kiera Anderson</h4>
       													<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -255,7 +255,7 @@
       											<div class="d-flex">
       												<div class="avatar avatar-m status-online me-3"><img
       														class="rounded-circle"
-      														src="../../assets/img/team/40x40/59.webp" alt=""></div>
+      														src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/59.webp" alt=""></div>
       												<div class="flex-1 me-sm-3">
       													<h4 class="fs--1 text-black">Herman Carter</h4>
       													<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -286,7 +286,7 @@
       											<div class="d-flex">
       												<div class="avatar avatar-m status-online me-3"><img
       														class="rounded-circle"
-      														src="../../assets/img/team/40x40/58.webp" alt=""></div>
+      														src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/58.webp" alt=""></div>
       												<div class="flex-1 me-sm-3">
       													<h4 class="fs--1 text-black">Benjamin Button</h4>
       													<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -436,7 +436,7 @@
       						<div class="card-body p-0">
       							<div class="text-center pt-4 pb-3">
       								<div class="avatar avatar-xl ">
-      									<img class="rounded-circle " src="../../assets/img/team/72x72/57.webp" alt="">
+      									<img class="rounded-circle " src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/72x72/57.webp" alt="">
       								</div>
       								<h6 class="mt-2 text-black">Jerry Seinfield</h6>
       							</div>
@@ -1307,7 +1307,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/30.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/30.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Jessie Samson</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -1368,7 +1368,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle avatar-placeholder"
-      													src="../../assets/img/team/40x40/avatar.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/avatar.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Jessie Samson</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -1400,7 +1400,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/57.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/57.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Kiera Anderson</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -1430,7 +1430,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/59.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/59.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Herman Carter</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -1460,7 +1460,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/58.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/58.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Benjamin Button</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -1600,7 +1600,7 @@
       				role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true"
       				aria-expanded="false">
       				<div class="avatar avatar-l ">
-      					<img class="rounded-circle " src="../../assets/img/team/40x40/57.webp" alt="">
+      					<img class="rounded-circle " src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/57.webp" alt="">
       				</div>
       			</a>
       			<div class="dropdown-menu dropdown-menu-end navbar-dropdown-caret py-0 dropdown-profile shadow border border-300"
@@ -1609,7 +1609,7 @@
       					<div class="card-body p-0">
       						<div class="text-center pt-4 pb-3">
       							<div class="avatar avatar-xl ">
-      								<img class="rounded-circle " src="../../assets/img/team/72x72/57.webp" alt="">
+      								<img class="rounded-circle " src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/72x72/57.webp" alt="">
       							</div>
       							<h6 class="mt-2 text-black">Jerry Seinfield</h6>
       						</div>
@@ -2469,7 +2469,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/30.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/30.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Jessie Samson</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -2530,7 +2530,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle avatar-placeholder"
-      													src="../../assets/img/team/40x40/avatar.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/avatar.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Jessie Samson</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -2562,7 +2562,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/57.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/57.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Kiera Anderson</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -2592,7 +2592,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/59.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/59.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Herman Carter</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -2622,7 +2622,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/58.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/58.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Benjamin Button</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -2768,7 +2768,7 @@
       					<div class="card-body p-0">
       						<div class="text-center pt-4 pb-3">
       							<div class="avatar avatar-xl ">
-      								<img class="rounded-circle " src="../../assets/img/team/72x72/57.webp" alt="">
+      								<img class="rounded-circle " src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/72x72/57.webp" alt="">
       							</div>
       							<h6 class="mt-2 text-black">Jerry Seinfield</h6>
       						</div>
@@ -3632,7 +3632,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/30.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/30.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Jessie Samson</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -3693,7 +3693,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle avatar-placeholder"
-      													src="../../assets/img/team/40x40/avatar.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/avatar.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Jessie Samson</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -3725,7 +3725,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/57.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/57.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Kiera Anderson</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -3755,7 +3755,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/59.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/59.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Herman Carter</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -3785,7 +3785,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/58.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/58.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Benjamin Button</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -3925,7 +3925,7 @@
       				role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true"
       				aria-expanded="false">
       				<div class="avatar avatar-l ">
-      					<img class="rounded-circle " src="../../assets/img/team/40x40/57.webp" alt="">
+      					<img class="rounded-circle " src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/57.webp" alt="">
       				</div>
       			</a>
       			<div class="dropdown-menu dropdown-menu-end navbar-dropdown-caret py-0 dropdown-profile shadow border border-300"
@@ -3934,7 +3934,7 @@
       					<div class="card-body p-0">
       						<div class="text-center pt-4 pb-3">
       							<div class="avatar avatar-xl ">
-      								<img class="rounded-circle " src="../../assets/img/team/72x72/57.webp" alt="">
+      								<img class="rounded-circle " src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/72x72/57.webp" alt="">
       							</div>
       							<h6 class="mt-2 text-black">Jerry Seinfield</h6>
       						</div>
@@ -4794,7 +4794,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/30.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/30.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Jessie Samson</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -4855,7 +4855,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle avatar-placeholder"
-      													src="../../assets/img/team/40x40/avatar.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/avatar.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Jessie Samson</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -4887,7 +4887,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/57.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/57.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Kiera Anderson</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -4917,7 +4917,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/59.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/59.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Herman Carter</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -4947,7 +4947,7 @@
       										<div class="d-flex">
       											<div class="avatar avatar-m status-online me-3"><img
       													class="rounded-circle"
-      													src="../../assets/img/team/40x40/58.webp" alt=""></div>
+      													src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/58.webp" alt=""></div>
       											<div class="flex-1 me-sm-3">
       												<h4 class="fs--1 text-black">Benjamin Button</h4>
       												<p class="fs--1 text-1000 mb-2 mb-sm-3 fw-normal"><span
@@ -5093,7 +5093,7 @@
       					<div class="card-body p-0">
       						<div class="text-center pt-4 pb-3">
       							<div class="avatar avatar-xl ">
-      								<img class="rounded-circle " src="../../assets/img/team/72x72/57.webp" alt="">
+      								<img class="rounded-circle " src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/72x72/57.webp" alt="">
       							</div>
       							<h6 class="mt-2 text-black">Jerry Seinfield</h6>
       						</div>
@@ -5186,7 +5186,7 @@
       												<div class="d-flex">
       													<div class="avatar avatar-m status-online me-3"><img
       															class="rounded-circle"
-      															src="../../assets/img/team/40x40/30.webp" alt="">
+      															src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/30.webp" alt="">
       													</div>
       													<div class="flex-1 me-sm-3">
       														<h4 class="fs--1 text-black">Jessie Samson</h4>
@@ -5253,7 +5253,7 @@
       												<div class="d-flex">
       													<div class="avatar avatar-m status-online me-3"><img
       															class="rounded-circle avatar-placeholder"
-      															src="../../assets/img/team/40x40/avatar.webp" alt="">
+      															src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/avatar.webp" alt="">
       													</div>
       													<div class="flex-1 me-sm-3">
       														<h4 class="fs--1 text-black">Jessie Samson</h4>
@@ -5289,7 +5289,7 @@
       												<div class="d-flex">
       													<div class="avatar avatar-m status-online me-3"><img
       															class="rounded-circle"
-      															src="../../assets/img/team/40x40/57.webp" alt="">
+      															src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/57.webp" alt="">
       													</div>
       													<div class="flex-1 me-sm-3">
       														<h4 class="fs--1 text-black">Kiera Anderson</h4>
@@ -5323,7 +5323,7 @@
       												<div class="d-flex">
       													<div class="avatar avatar-m status-online me-3"><img
       															class="rounded-circle"
-      															src="../../assets/img/team/40x40/59.webp" alt="">
+      															src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/59.webp" alt="">
       													</div>
       													<div class="flex-1 me-sm-3">
       														<h4 class="fs--1 text-black">Herman Carter</h4>
@@ -5357,7 +5357,7 @@
       												<div class="d-flex">
       													<div class="avatar avatar-m status-online me-3"><img
       															class="rounded-circle"
-      															src="../../assets/img/team/40x40/58.webp" alt="">
+      															src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/58.webp" alt="">
       													</div>
       													<div class="flex-1 me-sm-3">
       														<h4 class="fs--1 text-black">Benjamin Button</h4>
@@ -5507,7 +5507,7 @@
       						role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true"
       						aria-expanded="false">
       						<div class="avatar avatar-l ">
-      							<img class="rounded-circle " src="../../assets/img/team/40x40/57.webp" alt="">
+      							<img class="rounded-circle " src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/40x40/57.webp" alt="">
       						</div>
       					</a>
       					<div class="dropdown-menu dropdown-menu-end navbar-dropdown-caret py-0 dropdown-profile shadow border border-300"
@@ -5516,7 +5516,7 @@
       							<div class="card-body p-0">
       								<div class="text-center pt-4 pb-3">
       									<div class="avatar avatar-xl ">
-      										<img class="rounded-circle " src="../../assets/img/team/72x72/57.webp"
+      										<img class="rounded-circle " src="<?php  echo($_SERVER['DOCUMENT_ROOT']);?>/Estanteria/assets/img/team/72x72/57.webp"
       											alt="">
       									</div>
       									<h6 class="mt-2 text-black">Jerry Seinfield</h6>

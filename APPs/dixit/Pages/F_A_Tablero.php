@@ -152,7 +152,7 @@
 							<!--section class="section1" id="section1"-->
 							<div class="cardElgo">
 								<div class="face front">
-								<img src='\Estanteria\APPs\dixit\assets\img\originales\<?php echo $row['Tarjeta'];?>.jpg'> 
+								<img src='/Estanteria/APPs/dixit/assets/img/originales/<?php echo $row['Tarjeta'];?>.jpg'> 
 									<h3>Tarjeta 1</h3>
 								</div>
 								<div class="face back">

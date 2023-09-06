@@ -41,7 +41,7 @@
 														else 
 														{
 															?>
-												<img class="rounded-circle" src="/estanteria/assets/img/team/40x40/<?php Echo ($row['IdNotificador']);?>.webp" alt="">															
+												<img class="rounded-circle" src="/Estanteria/assets/img/team/40x40/<?php Echo ($row['IdNotificador']);?>.webp" alt="">															
 															<?php 
 														}
 												;?>

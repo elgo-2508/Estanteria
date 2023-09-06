@@ -1,7 +1,7 @@
 <?php {
 	session_start();
 	$Codigo = $_SESSION['Codigo'];
-	include($_SERVER['DOCUMENT_ROOT'] ."/estanteria/APPs/php/conexion_mysql.php");
+	include($_SERVER['DOCUMENT_ROOT'] ."/Estanteria/APPs/php/conexion_mysql.php");
 	$Consulta = "Call DX_IniciarPartida('".$Codigo."');";
 	$ejecutar = $conn_sis->query($Consulta);
 	if (!$ejecutar) {

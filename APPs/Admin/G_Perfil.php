@@ -7,7 +7,8 @@ $NomUsuario= 'Eduardo Giraldo';
 <li class="nav-item dropdown"><a class="nav-link lh-1 pe-0" id="navbarDropdownUser" href="#!" role="button"
 		data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">
 		<div class="avatar avatar-l ">
-			<img class="rounded-circle " src="/estanteria/assets/img/team/40x40/<?php Echo($IdUsuario);?>.webp" alt="">
+		
+			<img class="rounded-circle " src="/Estanteria/assets/img/team/40x40/<?php Echo($IdUsuario);?>.webp" alt="">
 		</div>
 	</a>
 	<div class="dropdown-menu dropdown-menu-end navbar-dropdown-caret py-0 dropdown-profile shadow border border-300"
@@ -16,7 +17,7 @@ $NomUsuario= 'Eduardo Giraldo';
 			<div class="card-body p-0">
 				<div class="text-center pt-4 pb-3">
 					<div class="avatar avatar-xl ">
-						<img class="rounded-circle " src="/estanteria/assets/img/team/72x72/<?php Echo($IdUsuario);?>.webp" alt="">
+						<img class="rounded-circle " src="/Estanteria/assets/img/team/72x72/<?php Echo($IdUsuario);?>.webp" alt="">
 					</div>
 					<h6 class="mt-2 text-black"><?php Echo($NomUsuario);?></h6>
 				</div>

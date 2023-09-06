@@ -15,6 +15,7 @@
 				return false;
 		}         
 		$Consulta = "call TP_InscribirJuego  ('".$Codigo."', '".$Participante."');";
+		mysqli_set_charset($conn_sis, "utf8mb4_general_ci");
 		$ejecutar = $conn_sis->query($Consulta);
 		$i=1;
 		while($row= $ejecutar->fetch_assoc()) 

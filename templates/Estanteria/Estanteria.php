@@ -55,15 +55,20 @@ if (!isset($_SESSION['token']) )
     <!-- ===============================================-->
     <main class="main" id="top">
       <!-- Menu Vertical Y  HORIZONTAL-->
-      <?php require_once "../../APPs/Admin/MD_B_menu.php"; ?>
+      <?php
+      require_once ($_SERVER['DOCUMENT_ROOT']."/Estanteria/APPs/Admin/MD_B_menu.php"); 
+      ?>
       <!-- FIN Menu Horizontal colabado y demas-->
       <!-- Inicio cuerpo-->
       <div class="content">
         <!-- inicia el contenido-->
         <div class="card-container">
-          <?php {
-          include("../../../Estanteria/APPs/php/conexion_mysql.php");
+            
+          <?php 
+          {
+          include($_SERVER['DOCUMENT_ROOT']."/Estanteria/APPs/php/conexion_mysql.php");
           $Consulta = "call Generar_CargarEstanteria ('Egiraldo');";
+            
           $ejecutar = $conn_sis->query($Consulta);
           $i=1;
 	        while($row= $ejecutar->fetch_assoc()) 
@@ -91,8 +96,10 @@ if (!isset($_SESSION['token']) )
 		        $i=$i+1;
             }		
             $conn_sis->close();
-
-            }?>		
+            
+            }
+            ?>		
+            
         </div>
         <!-- finaliza el contenido-->
         <!--Pie de pagina-->
