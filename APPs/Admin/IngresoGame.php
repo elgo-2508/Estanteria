@@ -1,6 +1,8 @@
 <?php
 	if(isset($_POST['insert']))
 	{	
+
+		// funcion para gestionar el ingreso al juego
 		include ($_SERVER['DOCUMENT_ROOT'] . "/Estanteria/APPs/php/conexion_mysql.php");
 		$Codigo = $_POST['Codigo'];
 		$Participante = $_POST['Participante'];
@@ -25,7 +27,7 @@
 				session_start();
 				$_SESSION['Codigo']=$Codigo ;
 				$_SESSION['Participante']=$Participante;
-				header('Location: SalaJugador.php');
+				header("Location: '".$row['SalaJugador']."'");
 				exit;
 				}
 			if ($row['NumError'] != 0)
@@ -61,7 +63,7 @@
 					session_start();
 					$_SESSION['Codigo']=$Codigo ;
 					$_SESSION['Participante']=$Participante;
-					header('Location: SalaJugador.php');
+					header("Location: '".$row['SalaJugador']."'");
 					$conn_sis->close();
 					exit;
 					}

@@ -106,6 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
                       <option value="Topo">Topo</option>
                       <option value="MonkyDu">MonkyDu</option>
                       <option value="DixIt">DixIt</option>
+                      <option value="QuizGame-KnowGRM">QuizGame-KnowGRM</option>
                     </select>
                     <label for="floatingSelectGame">Juego</label></div>
                 </div>
