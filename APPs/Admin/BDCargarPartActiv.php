@@ -28,7 +28,7 @@
 			<div class="dropdown-menu dropdown-menu-end py-2" style="">
 				<a class="dropdown-item"
 					href="JuegoActivo.php?codigoPartida=<?php echo $row['Codigo']; ?>">Administrar</a>
-				<a class="dropdown-item" href="#!">Ver</a>
+				<a class="dropdown-item" href="BD_B_ArgarTablero.php?codigo=<?php echo $row['Codigo']; ?>">Ver</a>
 				<a class="dropdown-item" href="#!">Cerrar</a>
 				<div class="dropdown-divider"></div>
 				<a class="dropdown-item text-danger" href="#!">Eliminar</a>

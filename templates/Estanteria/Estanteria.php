@@ -62,8 +62,7 @@ if (!isset($_SESSION['token']) )
       <!-- Inicio cuerpo-->
       <div class="content">
         <!-- inicia el contenido-->
-        <div class="card-container">
-            
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-3 mb-9">
           <?php 
           {
           include($_SERVER['DOCUMENT_ROOT']."/Estanteria/APPs/php/conexion_mysql.php");
@@ -76,7 +75,9 @@ if (!isset($_SESSION['token']) )
 
             ?>
             <!--section class="section1" id="section1"-->
-            <div class="cardElgo">
+
+            <div class="col">
+                <div class="cardElgo">
               <div class="face front">
               <img src=<?php {echo '../../assets/img/estanteria/'.$row['Imagen'];}?> alt="">
                 <h3><?php {echo $row['Nombre'];}?></h3>
@@ -89,7 +90,9 @@ if (!isset($_SESSION['token']) )
                   <a bg-dark href=<?php {echo $row['php'];}?>><span class="badge rounded-pill bg-warning text-dark">Cargar Juego</span></a>							
                 </div>
               </div>
-            </div>
+
+            </div>   
+          </div>                
             <!--/section-->
 
             <?php    
@@ -99,7 +102,7 @@ if (!isset($_SESSION['token']) )
             
             }
             ?>		
-            
+
         </div>
         <!-- finaliza el contenido-->
         <!--Pie de pagina-->
