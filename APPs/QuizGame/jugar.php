@@ -71,7 +71,7 @@ if(isset($_GET['siguiente'])){//Ya esta jugando
             <div class="categoria">
                 <?php echo obtenerNombreTema($preguntaActual['tema']) ?>
             </div>
-            <a href="index.php">Quizgame.com</a>
+            <a href="/Estanteria">Estanteria</a>
         </header>
         <div class="info">
             <div class="estadoPregunta">

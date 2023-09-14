@@ -27,7 +27,7 @@
 				session_start();
 				$_SESSION['Codigo']=$Codigo ;
 				$_SESSION['Participante']=$Participante;
-				header("Location: '".$row['SalaJugador']."'");
+				header("Location: ".$row['SalaJugador']."");
 				exit;
 				}
 			if ($row['NumError'] != 0)
@@ -63,7 +63,7 @@
 					session_start();
 					$_SESSION['Codigo']=$Codigo ;
 					$_SESSION['Participante']=$Participante;
-					header("Location: '".$row['SalaJugador']."'");
+					header("Location: ".$row['SalaJugador']."");
 					$conn_sis->close();
 					exit;
 					}
