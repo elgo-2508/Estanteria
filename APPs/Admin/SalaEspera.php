@@ -91,9 +91,8 @@ $conn_sis->close();
 										style="max-width: 300px">
 										<h1><?php echo ($Juego);?></h1>
 									</center>
-									<form class='p-4 p-md-4 border rounded-3 bg-light'>
-										<div id="CargarParticipantes" class="row row-cols-1 row-cols-md-2 text-center"></div>
-									</form>							
+										<div id="CargarParticipantes" ></div>
+									
 								</div>	
 							</div>	
 						</div>	

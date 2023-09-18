@@ -5,7 +5,8 @@
 		// funcion para gestionar el ingreso al juego
 		include ($_SERVER['DOCUMENT_ROOT'] . "/Estanteria/APPs/php/conexion_mysql.php");
 		$Codigo = $_POST['Codigo'];
-		$Participante = $_POST['Participante'];
+		$Participante = $_POST['emojiValue'] .'-'. $_POST['Participante'];
+
 		if($Codigo=="")
 		{
 				echo ' <script type="text/javascript"> alertify.success("debes ingresar un código");</script>';
@@ -102,7 +103,9 @@
 	<link rel="stylesheet" href="../../assets/css/line-1.css"> <!-- Iconos -->
 	<link href="../../assets/css/theme.min-1.css" type="text/css" rel="stylesheet" id="style-default">
 	<!-- el mas impotante -->
-	<link rel="stylesheet" href="../../assets/css/PlantillaRotar.css">
+	<!-- link rel="stylesheet" href="../../assets/css/PlantillaRotar.css" -->
+	<link rel="stylesheet" href="css/Emojis.css">
+
 	<!-- ===============================================-->
 
 </head>
@@ -113,9 +116,7 @@
 	<!-- ===============================================-->
 	<main class="main" id="top">
 		<!-- Menu Vertical Y  HORIZONTAL-->
-		<?php 
-			require_once "MD_B_menu.php"; 
-		?>
+		<?php require_once "MD_B_menu.php"; ?>
 		<!-- FIN Menu Horizontal colabado y demas-->
 		<!-- Inicio cuerpo-->
 		<div class="content">
@@ -126,26 +127,33 @@
 							<img class="me-3 bg-purple rounded shadow-sm" src="img/LogoSinFondo2.png" alt=""
 								height="100">
 							<h1 class="display-4 fw-bold lh-1 mb-3">Girald Games</h1>
-							<p class="col-lg-10 fs-4">Aplicacion para juegos en familia</p>
+							<p class="col-lg-10 fs-4">Join the party</p>
 						</div>
 						<div class="col-md-10 mx-auto col-lg-5">
 							<form class="p-4 p-md-5 border rounded-3 bg-light">
 								<div class="form-floating mb-3">
 									<input autocomplete="off" type="text" class="form-control" id="Codigo" name="Codigo"
 										id="floatingInput">
-									<label for="floatingInput">Codigo</label>
+									<label for="floatingInput">Code</label>
 								</div>
 								<div class="form-floating mb-3">
 									<input autocomplete="off" type="text" class="form-control" name="Participante"
-										id="floatingInput">
-									<label for="floatingInput">Participante</label>
+										id="floatingInput" maxlength="20"><span id="contador">0/20</span>
+									<label for="floatingInput">Competitor</label>
 								</div>
+								<span id="selectedEmoji" class="emoji-picked">🤗</span>
+								<input type="hidden" id="emojiValue" name="emojiValue">
+								<a href="#" id="openModal">Change Avatar</a>
+								<?php require_once "ModalEmoji.php"; 		?>		
+								<br>								
+
 								<button class="w-100 btn btn-lg btn-primary" name="insert"
-									type="submit">Ingresar</button>
+									type="submit">Get into the Game</button>
 								<br> </br>
 								<button class="w-100 btn btn-lg btn btn-secondary" name="reinsert"
-									type="submit">re-Ingresar</button>
+									type="submit">Re-enter the game</button>
 							</form>
+							
 						</div>
 
 					</div>
@@ -191,8 +199,26 @@
 
 </html>
 
+<script src="css/Emoji.js"></script>
+
 
 <script>
 var params = new URLSearchParams(window.location.search);
 document.getElementById("Codigo").value = params.get("Codigo");
 </script>
+<script>
+document.getElementById('floatingInput').addEventListener('input', function() {
+  var contador = document.getElementById('contador');
+  var mensaje = this.value;
+  var longitud = mensaje.length;
+
+  if (longitud > 20) {
+      this.value = mensaje.slice(0, 20);
+      longitud = 20;
+  }
+
+  contador.textContent = longitud + '/20';
+});
+
+</script>
+

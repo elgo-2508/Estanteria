@@ -16,6 +16,10 @@ session_start();
     $Consulta = "Call CargarParticipantes ('".$Codigo."');";
     $ejecutar = $conn_sis->query($Consulta);
     $i=1;
+    echo "<center><h4>participantes inscritos: ". $ejecutar->num_rows ."</h4></center>";
+    echo "<form class='p-4 p-md-4 border rounded-3 bg-light'>";
+    echo "<div class='row row-cols-1 row-cols-md-2 text-center'>";
+
     while($row= $ejecutar->fetch_assoc())
     {
         echo "<div class='col'>";
@@ -26,5 +30,9 @@ session_start();
         echo "</div>"; 
         $i=$i+1;
     }		
+    echo "</div>";
+    echo "</form>";		
+
+    
     $conn_sis->close();
 }?>
