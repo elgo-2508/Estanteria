@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+	font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.left-section, .right-section, .main-section {
+    padding: 5px;
+}
+
+.right-section {
+    flex: 0 0 20%; /* Las secciones izquierda y derecha ocuparán un 30% del espacio disponible */
+    max-width: 20%; /* Máximo ancho permitido */
+}
+
+.main-section {
+    flex: 1;
+    position: relative; /* Asegura que la imagen sea relativa a este contenedor */
+    /* overflow: hidden;  Oculta cualquier parte de la imagen que se desborde */
+}
+
+.main-section img {
+    width: 100%; /*  La imagen ocupará el 100% del ancho del contenedor */
+    height: 100%; /* La imagen ocupará el 100% de la altura del contenedor */
+    object-fit: cover; /* La imagen se ajustará al tamaño del contenedor sin distorsionar sus proporciones */
+    position: absolute; /* Coloca la imagen en una posición absoluta para llenar completamente el contenedor */
+    top: 0;
+    left: 0;
+}
+
+
+.video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.main-section video {
+    width: 50%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2px;
+}
+
+#contador {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 12px;
+    color: #888;
+}
+
+.left-section {
+    flex: 0 0 15%; /* Ocupa el 30% del espacio disponible */
+    max-width: 15%; /* Máximo ancho permitido */
+    display: flex;
+    flex-direction: column; /* Los botones se apilan verticalmente */
+    justify-content: space-around; /* Espacio uniforme entre los botones */
+    align-items: center; /* Centra los botones horizontalmente */
+}
+
+.left-section button {
+    width: 100%; /* Los botones ocupan el 100% del ancho de la sección */
+    padding: 10px;
+    margin-bottom: 10px; /* Espacio entre los botones */
+    box-sizing: border-box; /* Incluye el padding y el border en el ancho del botón */
+}
+
+
+.right-section a {
+    width: 100%; /* Ocupa el 100% del ancho de la sección */
+    padding: 10px;
+	font-size: 50px; /* Tamaño de fuente de los enlaces */
+    margin-bottom: 10px; /* Espacio entre los elementos */
+	text-decoration: none;
+}
+
+
+.area {
+    border: 2px solid red; /* Borde rojo de 2 píxeles */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra ligera */
+}
+
+.contenedor {
+    white-space: nowrap;
+}
+
+
+.a {
+	text-decoration: none;
+}
+
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Por defecto, el modal estará oculto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

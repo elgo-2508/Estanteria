@@ -20,14 +20,14 @@ if(isset($_GET['siguiente']))
     {
         //ActualizaRespuesta($_SESSION['Participante']);
         $_SESSION['correctas'] = $_SESSION['correctas'] + 1;
-        header("Location: Ranking.php");
+        header("Location: RankingJugador.php");
 				exit;
     }
 		else
 		{
 			//ActualizaRespuesta($_SESSION['Participante']);
 			$_SESSION['correctas'] = $_SESSION['correctas'] ;
-			header("Location: Ranking.php");
+			header("Location: RankingJugador.php");
 			exit;
 		}		
 }
@@ -48,6 +48,9 @@ else
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>QUIZ GAME</title>
 	<link rel="stylesheet" href="estilo.css">
+	<script src="../../lib/bootstrap/bootstrap.min.js"></script>
+	<link href="../../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
+
 </head>
 
 <body>
@@ -84,6 +87,12 @@ else
 				<div class="boton">
 					<input type="submit" value="Siguiente" name="siguiente">
 				</div>
+				<br>
+				<div class="progress" style="height:15px">
+					<div class="progress-bar bg-warning 
+					rounded-3" role="progressbar" style="width: 0%" aria-valuenow="25"
+						aria-valuemin="0" aria-valuemax="100">0%</div>
+				</div>
 			</form>
 		</div>
 	</div>
@@ -91,3 +100,28 @@ else
 </body>
 
 </html>
+
+<script src="juego.js"></script>
+
+<script>
+// Función para iniciar el contador
+function iniciarContador() {
+	var tiempoRestante = 60; // 60 segundos
+	var intervalo = setInterval(function() {
+		tiempoRestante--;
+		// Actualizar el valor de aria-valuenow
+		var progress = document.querySelector('.progress-bar');
+		var porcentaje = ((60 - tiempoRestante) / 60) * 100;
+		progress.style.width = porcentaje + "%";
+		progress.textContent = Math.round(porcentaje) + "%";
+		progress.setAttribute('aria-valuenow', Math.round(porcentaje));
+		if (tiempoRestante <= 0) {
+			clearInterval(intervalo);
+			// Redirigir a otra página cuando el tiempo se agote
+			window.location.href = 'Ranking.php';
+		}
+	}, 250); // Actualizar cada segundo
+}
+// Iniciar el contador cuando la página cargue
+window.onload = iniciarContador;
+</script>

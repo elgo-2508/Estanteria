@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $_SESSION['usuario'] = $Participante;;
     $_SESSION['idCategoria'] = 9;
     $_SESSION['Pregunta'] = 3;    
-    header("Location: jugarAnfitrion.php");
+    header("Location: jugarParticipante.php");
     exit;
     }
 
@@ -30,13 +30,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         body {
             color: #FFFFFF; /* Esto establece el color del texto en blanco */
         }
+        
+        .parpadeo span {
+        font-size: 24px;
+        animation: titilar 1s infinite alternate;
+        }
+
+        @keyframes titilar {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
         </style>  
 </head>
 <body>
-    <h1>Consulta de Usuarios</h1>
-    <form method="post" action="SalaEsperaJugador.php">
-        <button type="submit">Consultar</button>
-    </form>
+    
+    <div class="container">
+        <center>
+        <img src="../../assets/img/icons/LogoSinFondo.png" class="img-fluid" style="max-width: 300px">
+        <h2>Waiting for the others</h2>
+        <h1>🐶-Elgo</h1>
+        <div class="parpadeo">
+            <span>get ready for the game</span>
+        </div>
+        <!-- Remplazar por mecanismo de soket o consulta en base de datos-->
+        <form method="post" action="SalaEsperaJugador.php">
+            <button type="submit">Consultar</button>
+        </form>
+        <center>
+    </div>
+
 </body>
 </html>
 
