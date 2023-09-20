@@ -9,3 +9,9 @@
 	<br>
 	<a href="#">📺</a>
 	</center>
+
+
+<center>	
+	<h2>Open Clues</h2>
+	<h1>10</h1>
+</center>

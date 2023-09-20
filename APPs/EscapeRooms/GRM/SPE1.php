@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título de la Página</title>
-    <link rel="stylesheet" href="stilo.css">
-		<link rel="stylesheet" type="text/css" href="../../../lib/bootstrap/css/bootstrap.min.css" >
 		<link rel="stylesheet" type="text/css" href="../../../lib/alertifyjs/css/alertify.css" >
 		<link rel="stylesheet" type="text/css" href="../../../lib/alertifyjs/css/themes/default.css" >
+		<link rel="stylesheet" type="text/css" href="../../../lib/bootstrap/css/bootstrap.min.css" >
+		<link rel="stylesheet" href="stilo.css">		
 
 </head>
 <body>
+	<header>
+		<?php require_once "BD/Heder.php"; ?> 			
+	</header>    
 
-    <header>
-        <!-- Contenido del header, como el logo y la barra de navegación -->
-        <h2>Girald-Games -  Captain One's Last Voyage</h2>
-    </header>
 
     <div class="main-content">
         <section class="left-section">
@@ -27,12 +26,12 @@
 					
             <!-- Contenido principal -->
 						<img src="img/Portada.jpeg" alt="Tu Imagen" usemap="#enlaces">
-								<a href="Pista1E1.php" style="position: absolute; top: 7%; left: 2%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.0);"></a>
-								<a href="Pista2E1.php" style="position: absolute; top: 5%; left: 80%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.0);"></a>
-								<a href="Pista3E1.php" style="position: absolute; top: 1%; left: 93%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.0);"></a>
-								<a href="Pista4E1.php" style="position: absolute; top: 50%; left: 75%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.0);"></a>
-								<a href="Pista5E1.php" style="position: absolute; top: 80%; left: 10%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.0);"></a>
-								<a href="Pista6E1.php" style="position: absolute; top: 85%; left: 95%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.0);"></a>
+								<a href="Pista1E1.php" style="position: absolute; top: 7%; left: 2%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);"></a>
+								<a href="Pista2E1.php" style="position: absolute; top: 5%; left: 80%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);"></a>
+								<a href="Pista3E1.php" style="position: absolute; top: 1%; left: 93%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);"></a>
+								<a href="Pista4E1.php" style="position: absolute; top: 50%; left: 75%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);"></a>
+								<a href="Pista5E1.php" style="position: absolute; top: 80%; left: 10%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);"></a>
+								<a href="Pista6E1.php" style="position: absolute; top: 85%; left: 95%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);"></a>
 								  <!-- Agrega más áreas según sea necesario -->
 						</map>
         </section>

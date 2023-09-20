@@ -22,10 +22,9 @@ if(isset($_POST['guardar'])) {
 </head>
 <body>
 
-    <header>
-        <!-- Contenido del header, como el logo y la barra de navegación -->
-        <h2>Girald-Games -  Captain One's Last Voyage</h2>
-    </header>
+<header>
+		<?php require_once "BD/Heder.php"; ?> 			
+	</header> 
 
     <div class="main-content">
 			<section class="left-section">

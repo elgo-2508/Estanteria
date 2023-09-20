@@ -15,17 +15,16 @@ if(isset($_POST['guardar'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título de la Página</title>
-    <link rel="stylesheet" href="stilo.css">
-		<link rel="stylesheet" type="text/css" href="../../../lib/bootstrap/css/bootstrap.min.css" >
 		<link rel="stylesheet" type="text/css" href="../../../lib/alertifyjs/css/alertify.css" >
 		<link rel="stylesheet" type="text/css" href="../../../lib/alertifyjs/css/themes/default.css" >
+		<link rel="stylesheet" type="text/css" href="../../../lib/bootstrap/css/bootstrap.min.css" >
+		<link rel="stylesheet" href="stilo.css">
 </head>
 <body>
 
-    <header>
-        <!-- Contenido del header, como el logo y la barra de navegación -->
-        <h2>Girald-Games -  Captain One's Last Voyage</h2>
-    </header>
+<header>
+		<?php require_once "BD/Heder.php"; ?> 			
+	</header> 
 
     <div class="main-content">
 				<section class="left-section">
@@ -47,8 +46,14 @@ if(isset($_POST['guardar'])) {
 											id="floatingInput" maxlength="20">
 											<span id="contador"></span>	
 										</div>
-										<button class="btn btn-secondary" id="Validar"  value="ValidaE1P1">Verificar</button>
+										<button class="btn btn-secondary" id="Validar"  value="ValidaE1P1">Check</button>
 										<button class="btn btn-secondary" id="Close"  value="Close">Close</button>
+										<div>
+										<p>Do you need to use a clue?, for each one you use,the total time will be increased 5 minutes</p>
+										<a href="#" onclick="MDE1P1P1()">Clue1</a>
+										<a href="#" onclick="MDE1P1P2()">Clue2</a>
+										<a href="#" onclick="MDE1P1P3()">Clue3</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -70,6 +75,41 @@ if(isset($_POST['guardar'])) {
 				</center>
 			</div>
     </footer>
+		<!-- Modal P1-->
+		<div id="ModalE1P1P1" class="modal">
+			<!-- Contenido del modal -->
+			<div class="modal-content">
+				<span class="close" id="CMDE1P1P1">&times;</span>
+				<h1>Pista 1</h1>
+				<p>The main actor of this movie is Leonardo DiCaprio</p>
+				
+				<!-- Aquí puedes incluir contenido PHP según tus necesidades -->
+			</div>
+		</div>	
+
+		<!-- Modal P2-->
+		<div id="ModalE1P1P2" class="modal">
+			<!-- Contenido del modal -->
+			<div class="modal-content">
+				<span class="close" id="CMDE1P1P2">&times;</span>
+				<h1>Pista 2</h1>
+				<p>The plot occurs in people's dreams</p>
+				<!-- Aquí puedes incluir contenido PHP según tus necesidades -->
+			</div>
+		</div>	
+
+		<!-- Modal P3-->
+		<div id="ModalE1P1P3" class="modal">
+			<!-- Contenido del modal -->
+			<div class="modal-content">
+				<span class="close" id="CMDE1P1P3">&times;</span>
+				<h1>Pista 3</h1>
+				<p>The movie's name is Inception</p>
+				<!-- Aquí puedes incluir contenido PHP según tus necesidades -->
+			</div>
+		</div>			
+
+
 	</body>
 	<script src="../../../lib/jquery-3.6.1.min.js"></script>
 	<script src="../../../lib/alertifyjs/alertify.js"></script>
@@ -77,8 +117,6 @@ if(isset($_POST['guardar'])) {
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </html>
-
-
 
 <script>
 		document.getElementById('Validar').addEventListener('click', function() {
@@ -101,26 +139,78 @@ if(isset($_POST['guardar'])) {
 </script>
 
 <script>
-	
-	function openModal() {
-    document.getElementById('myModal').style.display = 'block';
-	}
-
-	function closeModal() {
-			document.getElementById('myModal').style.display = 'none';
-	}
-
-	window.onclick = function(event) {
-			var modal = document.getElementById('myModal');
-			if (event.target == modal) {
-					modal.style.display = 'none';
-			}
-	}
-
-</script>
-
-<script>
 	document.getElementById('Close').addEventListener('click', function() {
 		window.location.href = 'SPE1.php';
 	});
 </script>
+
+
+<script>
+	// JavaScript para controlar el modal
+	function MDE1P1P1() 	{
+    document.getElementById('ModalE1P1P1').style.display = 'block';	}
+
+	document.getElementById('CMDE1P1P1').addEventListener	('click', function() 
+		{document.getElementById('ModalE1P1P1').style.display = 'none';	}	);
+
+	window.onclick = function(event)	{
+		if (event.target == document.getElementById('ModalE1P1P1')) 
+		{document.getElementById('ModalE1P1P1').style.display = 'none';}}
+</script>
+
+<script>
+	// JavaScript para controlar el modal
+	function MDE1P1P2() 	{
+    document.getElementById('ModalE1P1P2').style.display = 'block';	}
+
+	document.getElementById('CMDE1P1P2').addEventListener	('click', function() 
+		{document.getElementById('ModalE1P1P2').style.display = 'none';	}	);
+
+	window.onclick = function(event)	{
+		if (event.target == document.getElementById('ModalE1P1P2')) 
+		{document.getElementById('ModalE1P1P2').style.display = 'none';}}
+</script>
+
+<script>
+	// JavaScript para controlar el modal
+	function MDE1P1P3() 	{
+    document.getElementById('ModalE1P1P3').style.display = 'block';	}
+
+	document.getElementById('CMDE1P1P3').addEventListener	('click', function() 
+		{document.getElementById('ModalE1P1P3').style.display = 'none';	}	);
+
+	window.onclick = function(event)	{
+		if (event.target == document.getElementById('ModalE1P1P3')) 
+		{document.getElementById('ModalE1P1P3').style.display = 'none';}}
+</script>
+
+
+<script>
+	function ValidarPregunta() {
+		var pregunta ='ValidaE1P1';
+		var data = new FormData();
+		data.append('pregunta', pregunta);
+		fetch('BD/ValidarPregunta.php', {
+			method: 'POST',
+			body: data
+		})
+		.then(response => response.json())
+		.then(data => {
+			if (data.estado == 1) {
+				document.getElementById('floatingInput').value = data.respuestaBD;
+				document.getElementById('contador').textContent = "✅";
+				document.addEventListener('DOMContentLoaded', function() {
+				document.getElementById('Validar').disabled = true;
+			});
+			}
+		});
+	}
+
+	window.onload = function() {
+		ValidarPregunta(); // Llamar a la función al cargar la página
+	}
+</script>
+
+
+
+
