@@ -145,3 +145,27 @@ function aumentarCompletados(){
     $query = "UPDATE estadisticas SET completados = '$completados' WHERE id='1'";
     $result = mysqli_query($conn, $query);
 }
+function obtenerPreguntaActual($Codigo){
+    include("conexion.php");
+    //Añadimos un alias AS total para identificar mas facil
+    $query = "SELECT preguntaActual AS PreguntaActual FROM juego where codigo ='".$Codigo."'";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);  
+    return $row['PreguntaActual'];
+}
+
+function IniciarJuego($Codigo, $tema){
+    include("conexion.php");
+    //Añadimos un alias AS total para identificar mas facil
+    $query = "CALL InicioTestQuiz ('".$Codigo."',".$tema.")";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);  
+}
+
+function registrarpuntaje($Codigo, $Participante,$preguntaActual,$Respuesta, $punto){
+    include("conexion.php");
+    //Añadimos un alias AS total para identificar mas facil
+    $query = "insert into respuestas (codigo, `Participante`, `Pregunta`, `Respuesta`, `Estado`, puntos) values ('".$Codigo."', '".$Participante."', '".$preguntaActual."', '".$Respuesta."', '1', ".$punto.");";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);  
+}

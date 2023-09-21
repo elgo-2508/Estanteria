@@ -26,12 +26,12 @@
 					
             <!-- Contenido principal -->
 						<img src="img/Portada.jpeg" alt="Tu Imagen" usemap="#enlaces">
-								<a href="Pista1E1.php" style="position: absolute; top: 7%; left: 2%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);"></a>
-								<a href="Pista2E1.php" style="position: absolute; top: 5%; left: 80%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);"></a>
-								<a href="Pista3E1.php" style="position: absolute; top: 1%; left: 93%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);"></a>
-								<a href="Pista4E1.php" style="position: absolute; top: 50%; left: 75%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);"></a>
-								<a href="Pista5E1.php" style="position: absolute; top: 80%; left: 10%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);"></a>
-								<a href="Pista6E1.php" style="position: absolute; top: 85%; left: 95%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.5);"></a>
+								<a href="Pista1E1.php" style="position: absolute; top: 7%; left: 2%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.0);"></a>
+								<a href="Pista2E1.php" style="position: absolute; top: 5%; left: 80%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.0);"></a>
+								<a href="Pista3E1.php" style="position: absolute; top: 1%; left: 93%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.0);"></a>
+								<a href="Pista4E1.php" style="position: absolute; top: 50%; left: 75%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.0);"></a>
+								<a href="Pista5E1.php" style="position: absolute; top: 80%; left: 10%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.0);"></a>
+								<a href="Pista6E1.php" style="position: absolute; top: 85%; left: 95%; width: 30px; height: 30px; border-radius: 50%; background-color: rgba(255, 0, 0, 0.0);"></a>
 								  <!-- Agrega más áreas según sea necesario -->
 						</map>
         </section>

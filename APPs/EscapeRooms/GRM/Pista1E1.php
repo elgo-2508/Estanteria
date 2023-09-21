@@ -199,9 +199,9 @@ if(isset($_POST['guardar'])) {
 			if (data.estado == 1) {
 				document.getElementById('floatingInput').value = data.respuestaBD;
 				document.getElementById('contador').textContent = "✅";
-				document.addEventListener('DOMContentLoaded', function() {
-				document.getElementById('Validar').disabled = true;
-			});
+				//document.addEventListener('DOMContentLoaded', function() {
+				//document.getElementById('Validar').disabled = true;
+			//});
 			}
 		});
 	}

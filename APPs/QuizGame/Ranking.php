@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Listado de Personas</title>
 		<link rel="stylesheet" href="estilo.css">
+		<link rel="stylesheet" href="estilo.css2">
 		<link href="../../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
 		
 		<style>
@@ -42,7 +43,7 @@
 			list-style: none;
 			padding: 0;
 			position: absolute;
-			top: 40%;
+			top: 45%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			background-color: rgba(0, 0, 0, 0.5);
@@ -60,103 +61,14 @@
 	</head>
 
 	<body>
+		<div class="contenedor">
 		<form method="post" action="SiguentePregunta.php">
 					<button class="btn btn-primary w-100" type="submit">Continuar</button>
 		</form>
-		<h1>Rankin de personas</h1>
-		<div class="contenedor">
+		<h1>Ranking</h1>			
 			<img src="img/Podium2.jpg" alt="Tu Imagen" width="600" height="450">
 			<ul>
-				<li>
-									<div class="hidden" id="div3">
-									<div class="row g-12">  
-													<div class="col-12 col-lg-3">
-															<div class="avatar avatar-xl">
-																	<div class="avatar-name rounded-circle"><span>1</span></div>
-															</div>
-													</div>
-													<div class="col-12 col-lg-6">
-															<h3>Laura</h3>
-													</div>
-													<div class="col-12 col-lg-3">
-													<h3>10p</h3>
-													</div>
-											</div>                    
-					</div>
-				</li>
-				<li>
-									<div class="hidden" id="div3">
-									<div class="row g-12">  
-													<div class="col-12 col-lg-3">
-															<div class="avatar avatar-xl">
-																	<div class="avatar-name rounded-circle"><span>2</span></div>
-															</div>
-													</div>
-													<div class="col-12 col-lg-6">
-															<h3>Elgo</h3>
-													</div>
-													
-
-													<div class="col-12 col-lg-3">
-													<h3>10p</h3>
-													</div>
-											</div>
-					</div>
-				</li>
-				<li>
-									<div class="hidden" id="div3">
-									<div class="row g-12">  
-													<div class="col-12 col-lg-3">
-															<div class="avatar avatar-xl">
-																	<div class="avatar-name rounded-circle"><span>3</span></div>
-															</div>
-													</div>
-													<div class="col-12 col-lg-6">
-															<h3>Jorge</h3>
-													</div>
-
-													<div class="col-12 col-lg-3">
-															<h3>10p</h3>
-													</div>
-											</div>
-					</div>
-				</li>   
-				<li>
-									<div class="hidden" id="div3">
-									<div class="row g-12">  
-													<div class="col-12 col-lg-3">
-															<div class="avatar avatar-xl">
-																	<div class="avatar-name rounded-circle"><span>4</span></div>
-															</div>
-													</div>
-													<div class="col-12 col-lg-6">
-															<h3>Jorge</h3>
-													</div>
-
-													<div class="col-12 col-lg-3">
-															<h3>10p</h3>
-													</div>
-											</div>
-					</div>
-				</li>    
-				<li>
-									<div class="hidden" id="div3">
-									<div class="row g-12">  
-													<div class="col-12 col-lg-3">
-															<div class="avatar avatar-xl">
-																	<div class="avatar-name rounded-circle"><span>5</span></div>
-															</div>
-													</div>
-													<div class="col-12 col-lg-6">
-															<h3>Jorge</h3>
-													</div>
-
-													<div class="col-12 col-lg-3">
-															<h3>10p</h3>
-													</div>
-											</div>
-					</div>
-				</li>                                                 			
+				<?php require_once ('Back/RetornarRanking.php');?>                                   			
 			</ul>
 					</div>
 		</div>

@@ -1,17 +1,6 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST")
- {
-    // Recibir datos del formulario
-    session_start();
-    $Codigo = 'ASDFG';//$_SESSION['Codigo'];
-    $Participante = 'Elgo';//$_SESSION['Participante'];
-    $_SESSION['usuario'] = $Participante;;
-    $_SESSION['idCategoria'] = 9;
-    $_SESSION['Pregunta'] = 3;    
-    header("Location: jugarParticipante.php");
-    exit;
-    }
-
+ session_start();
+ $usuario = $_SESSION['Participante'];
 ?>
 
 <!DOCTYPE html>
@@ -52,19 +41,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         <center>
         <img src="../../assets/img/icons/LogoSinFondo.png" class="img-fluid" style="max-width: 300px">
         <h2>Waiting for the others</h2>
-        <h1>🐶-Elgo</h1>
+        <h1><?php echo($usuario);?></h1>
         <div class="parpadeo">
             <span>get ready for the game</span>
         </div>
-        <!-- Remplazar por mecanismo de soket o consulta en base de datos-->
+        <!-- Remplazar por mecanismo de soket o consulta en base de datos
         <form method="post" action="SalaEsperaJugador.php">
             <button type="submit">Consultar</button>
         </form>
+        -->
         <center>
     </div>
 
 </body>
 </html>
 
+<script>  
+document.addEventListener('DOMContentLoaded', function() {
+    setInterval(actualizarEstado, 1000); // Llamar a actualizarEstado cada segundo
+});
 
-
+function actualizarEstado() {
+    fetch('Back/validaInicio.php')
+        .then(response => response.json())
+        .then(data => {
+            console.log("Hola, mundo!");
+            
+            if (data.estado == true) {
+                window.location.href = 'jugarParticipante.php';
+            }
+        })
+        .catch(error => console.error('Error:', error));
+}
+</script>

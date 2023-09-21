@@ -1,5 +1,7 @@
 <?php
 session_start();
+$Codigo=  $_SESSION['Codigo'];
+$Participante=  $_SESSION['Participante'];
 //Si el usuario no esta logeado lo enviamos al index
 if (!$_SESSION['usuario']) {
     header("Location:index.php");
@@ -8,8 +10,8 @@ if (!$_SESSION['usuario']) {
 //Cargo las funciones del juego
 include("admin/funciones.php");
 $confi = obtenerConfiguracion();
-$totalPreguntasPorJuego = $confi['totalPreguntas'];
-
+$_SESSION['RespuestaActual']="";
+$totalPreguntasPorJuego = $confi['totalPreguntas'];	
 //si realiza el boto
 if(isset($_GET['siguiente']))
 {//Ya esta jugando
@@ -20,14 +22,18 @@ if(isset($_GET['siguiente']))
     {
         //ActualizaRespuesta($_SESSION['Participante']);
         $_SESSION['correctas'] = $_SESSION['correctas'] + 1;
-        header("Location: RankingJugador.php");
+				$_SESSION['RespuestaActual']='correcta';
+				registrarpuntaje($Codigo, $Participante,$_SESSION['Pregunta'],$_GET['respuesta'], 10);
+        header("Location: Resultado.php");
 				exit;
     }
 		else
 		{
 			//ActualizaRespuesta($_SESSION['Participante']);
 			$_SESSION['correctas'] = $_SESSION['correctas'] ;
-			header("Location: RankingJugador.php");
+			$_SESSION['RespuestaActual']='Fallida';
+			registrarpuntaje($Codigo, $Participante,$_SESSION['Pregunta'],$_GET['respuesta'], 0);
+			header("Location: Resultado.php");
 			exit;
 		}		
 }
@@ -96,7 +102,7 @@ else
 			</form>
 		</div>
 	</div>
-	<script src="juego.js"></script>
+
 </body>
 
 </html>
@@ -118,7 +124,7 @@ function iniciarContador() {
 		if (tiempoRestante <= 0) {
 			clearInterval(intervalo);
 			// Redirigir a otra página cuando el tiempo se agote
-			window.location.href = 'Ranking.php';
+			window.location.href = 'Resultado.php';
 		}
 	}, 250); // Actualizar cada segundo
 }

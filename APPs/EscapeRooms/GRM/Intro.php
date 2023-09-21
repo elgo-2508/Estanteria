@@ -19,7 +19,7 @@
 
     <div class="main-content">
         <section class="left-section">
-					<h1>Bienvenido</h1>			       
+					<h1>Welcome</h1>			       
 			
         </section>
 

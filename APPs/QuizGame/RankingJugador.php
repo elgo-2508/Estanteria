@@ -4,75 +4,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<form method="post" action="SiguentePregunta.php">
-        <button class="btn btn-primary w-100" type="submit">Continuar</button>
-  </form>
 	<title>Listado de Personas</title>
 	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="estilo2.css">
 	<link href="../../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-
-	<style>
-	body {
-		font-family: Arial, sans-serif;
-		background-color: #f0f0f0;
-		/* Color de fondo */
-		text-align: center;
-		/* Centra el contenido */
-	}
-
-	.contenedor {
-		position: relative;
-		/* Para posicionar la imagen de manera absoluta con respecto a este contenedor */
-		display: inline-block;
-		/* Hace que el contenedor solo tenga el tamaño del contenido */
-	}
-
-	.hidden {
-		display: none;
-	}
-
-
-
-	img {
-		max-width: 100%;
-		/* Asegura que la imagen no sea más ancha que su contenedor */
-		max-height: 100%;
-		/* Asegura que la imagen no sea más alta que su contenedor */
-	}
-
-	h1 {
-		color: #ffffff;
-	}
-    h3 {
-		color: #ffffff;
-	}
-
-	ul {
-		list-style: none;
-		padding: 0;
-		position: absolute;
-		top: 40%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		background-color: rgba(0, 0, 0, 0.5);
-		padding: 10px;
-		border-radius: 5px;
-		color: #ffffff;
-        width: 600px;
-	}
-
-	li {
-		margin: 5px 0;
-	}
-	</style>
 	<script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
 </head>
 
 <body>
 	<h1>Rankin de personas</h1>
-
 	<div class="contenedor">
 		<img src="img/podium2.jpg" alt="Tu Imagen" width="600" height="450">
 		<ul>
@@ -103,10 +44,6 @@
 <script src="../../lib/bootstrap/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-
-
-<!-- colapsar 
-menus-->
 
 </html>
 
@@ -186,3 +123,22 @@ document.addEventListener("DOMContentLoaded", function() {
 </body>
 
 </html>
+
+<script>  
+document.addEventListener('DOMContentLoaded', function() {
+    setInterval(actualizarEstado, 5000); // Llamar a actualizarEstado cada segundo
+});
+
+function actualizarEstado() {
+    fetch('Back/validaInicio.php')
+        .then(response => response.json())
+        .then(data => {
+            console.log("Hola, mundo!");
+            
+            if (data.estado == true) {
+                window.location.href = 'jugarParticipante.php';
+            }
+        })
+        .catch(error => console.error('Error:', error));
+}
+</script>

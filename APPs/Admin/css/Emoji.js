@@ -1076,7 +1076,7 @@ emojis.forEach((emojiObj, index) => {
   });
 
   // Agrega emojis a grupos de 8
-  if (index % 8 === 0) {
+  if (index % 6 === 0) {
       const row = document.createElement('div');
       row.classList.add('emoji-row');
       emojiContainer.appendChild(row);
