@@ -161,11 +161,30 @@ function IniciarJuego($Codigo, $tema){
     $result = mysqli_query($conn, $query);
     $row = mysqli_fetch_assoc($result);  
 }
-
 function registrarpuntaje($Codigo, $Participante,$preguntaActual,$Respuesta, $punto){
     include("conexion.php");
     //Añadimos un alias AS total para identificar mas facil
     $query = "insert into respuestas (codigo, `Participante`, `Pregunta`, `Respuesta`, `Estado`, puntos) values ('".$Codigo."', '".$Participante."', '".$preguntaActual."', '".$Respuesta."', '1', ".$punto.");";
     $result = mysqli_query($conn, $query);
     $row = mysqli_fetch_assoc($result);  
+}
+function RetornarSiguentePregunta($Codigo){
+    include("conexion.php");
+    //Añadimos un alias AS total para identificar mas facil
+    
+    $query = "select preguntas, consecutivo from juego where `Codigo`= '".$Codigo."';";
+    $result = mysqli_query($conn, $query);
+    $config = mysqli_fetch_assoc($result);
+    return $config;
+}
+function AvanzarNextPregunta($Codigo, $idPregunta, $consecutivo){
+    include("conexion.php");
+    $idPregunta = 3;
+    //Añadimos un alias AS total para identificar mas facil
+    $query = "update juego set `preguntaActual` = ".$idPregunta.",consecutivo=consecutivo+1  where codigo =  '".$Codigo."'";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);  
+    $query = "update respuestas set `Estado` = 0 where codigo =  '".$Codigo."' and `Pregunta` = ".$idPregunta.";";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);      
 }

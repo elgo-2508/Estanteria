@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Listado de Personas</title>
 		<link rel="stylesheet" href="estilo.css">
-		<link rel="stylesheet" href="estilo.css2">
 		<link href="../../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
 		
 		<style>
@@ -62,7 +61,7 @@
 
 	<body>
 		<div class="contenedor">
-		<form method="post" action="SiguentePregunta.php">
+		<form method="post" action="Back/AvanzarPregunta.php">
 					<button class="btn btn-primary w-100" type="submit">Continuar</button>
 		</form>
 		<h1>Ranking</h1>			

@@ -19,7 +19,7 @@ $_SESSION['respuesta_correcta'] = $preguntaActual['correcta'];
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Listado de Personas</title>
 	<link rel="stylesheet" href="estilo.css">
-	<link rel="stylesheet" href="estilo2.css">
+	<!--link rel="stylesheet" href="estilo2.css"-->
 	<link rel="stylesheet" href="prueba.css">
 	
 	<link href="../../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
@@ -75,7 +75,7 @@ $_SESSION['respuesta_correcta'] = $preguntaActual['correcta'];
 		echo '<div data-v-610cc016="" class="quiz-result-point">';
 		echo '<span data-v-610cc016="" class=""><b data-v-610cc016="">+ 10</b></span>';
 	}
-	else
+	else if ($EsCorrecta == 'Fallida')
 	{
 		echo '<div data-v-610cc016="" data-v-506f3506="" class="quiz-result-container incorrect animate__animated animate__slideInUp animate__faster show">';
 		echo '<div data-v-610cc016="" class="quiz-result-info">';
@@ -87,10 +87,23 @@ $_SESSION['respuesta_correcta'] = $preguntaActual['correcta'];
 		echo '<div data-v-610cc016="" class="quiz-result-point">';
 		echo '<span data-v-610cc016="" class=""><b data-v-610cc016="">+ 0</b></span>';
 	}	
+	else if ($EsCorrecta == 'FueraTiempo')
+	{
+		echo '<div data-v-610cc016="" data-v-506f3506="" class="quiz-result-container times-up animate__animated animate__slideInUp animate__faster show">';
+		echo '<div data-v-610cc016="" class="quiz-result-info">';
+		echo '<div data-v-610cc016="" class="quiz-result-marker">';		
+		echo '<img data-v-610cc016="" src="https://audience.ahaslides.com/img/times-up.5cbd5b65.png" alt="" width="63" height="67" class="quiz-result-symbol">';
+		echo '<span data-v-610cc016="" class="quiz-result-number">1</span>';
+		echo '</div>';
+		echo '<div data-v-610cc016="" class="quiz-result-text">¡El tiempo se acabo!</div>';
+		echo '<div data-v-610cc016="" class="quiz-result-point">';
+		echo '<span data-v-610cc016="" class=""><b data-v-610cc016="">+ 0</b></span>';
+	}	
 	?>
 		</div>
 	</div>
 	
+
 </body>
 <script src="confetti-modes.js"></script>
 <script src="../../lib/bootstrap/bootstrap.min.js"></script>
@@ -98,3 +111,20 @@ $_SESSION['respuesta_correcta'] = $preguntaActual['correcta'];
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 
 </html>
+
+<script>  
+document.addEventListener('DOMContentLoaded', function() {
+    setInterval(actualizarEstado, 1000); // Llamar a actualizarEstado cada segundo
+});
+
+function actualizarEstado() {
+    fetch('Back/SiguentePregunta.php')
+        .then(response => response.json())
+        .then(data => {
+             if (data.estado == true) {
+                window.location.href = 'jugarParticipante.php';
+            }
+        })
+        .catch(error => console.error('Error:', error));
+}
+</script>

@@ -124,7 +124,7 @@ function iniciarContador() {
 		if (tiempoRestante <= 0) {
 			clearInterval(intervalo);
 			// Redirigir a otra página cuando el tiempo se agote
-			window.location.href = 'Resultado.php';
+			window.location.href = 'Back/SuperoTiempo.php';
 		}
 	}, 250); // Actualizar cada segundo
 }

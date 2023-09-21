@@ -2,6 +2,7 @@
 <?php
 session_start();
 $codigo = $_SESSION['Codigo'];
+$_SESSION['Participante'] = "Admin";
 include("admin/funciones.php");
 aumentarVisita();
 $categorias =  obtenerCategorias();

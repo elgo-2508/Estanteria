@@ -1,7 +1,7 @@
 <?php
     session_start();
     //Si el usuario no esta logeado lo enviamos al index
-    if (!$_SESSION['usuario']) {
+    if (!$_SESSION["Participante"]) {
         header("Location:index.php");
     }
     include("admin/funciones.php");
